@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+
+
+
+    <link href="https://allfont.net/allfont.css?fonts=sansumi-bold" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Title</title>
+
+
+    <style>
+        body {
+            background-image: url('Images/hexabump.png');
+            background-repeat:repeat;
+        }
+
+        .github {
+            font-size: 25px;
+            color: white;
+        }
+        .git-col {
+            background-image: url('Images/dark-triangles.png');
+            background-repeat:repeat;
+            border: 2px grey solid;
+            border-top: 0px red solid;
+        }
+
+        .github:hover {
+            font-size: 25px;
+            color: white;
+        }
+
+        .intro-text2 {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            font-family: 'Sansumi-Bold', arial, serif;
+            letter-spacing: 15px;
+            font-size: 80px;
+            color: white;
+            margin-left: 100px;
+            margin-right: -100px;
+            padding-left: 35px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro-subtitle {
+            background-image: url('Images/dark-triangles.png');
+            background-repeat:repeat;
+            border: 2px grey solid;
+
+        }
+        .am-image {
+            border: 3px solid white;
+            margin-right: 120px;
+            margin-top: 65px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hor-line1 {
+            border: 2px solid white;
+            width: 100%;
+            margin-top: 70px;
+            margin-bottom: 100px;
+        }
+
+        .div {
+            position: relative;
+            display: block;
+            margin: 450px auto;
+        }
+
+        .div1 {
+             position: relative;
+             display: block;
+             margin: 450px auto;
+         }
+
+        .am-text1 {
+            font-family: 'Sansumi-Bold', arial, serif;
+            letter-spacing: 15px;
+            font-size: 80px;
+            color: white;
+            margin-top: 110px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .am-text2 {
+            text-align: justify;
+            padding: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+            color: white;
+        }
+
+        .am-text-body {
+            background-image: url('Images/dark-triangles.png');
+            background-repeat:repeat;
+            border: 2px grey solid;
+        }
+
+        .pp-text1 {
+            font-family: 'Sansumi-Bold', arial, serif;
+            letter-spacing: 15px;
+            font-size: 80px;
+            color: white;
+            margin-top: 110px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .pp-images {
+            min-width: 250px;
+            min-height: 225px;
+            max-width: 250px;
+            max-height: 225px;
+            margin: 20px;
+        }
+
+        .pp-row1 {
+            background-image: url('Images/dark-triangles.png');
+            background-repeat:repeat;
+            border: 2px grey solid;
+            border-bottom-width: 0;
+        }
+
+        .cm-text1 {
+            font-family: 'Sansumi-Bold', arial, serif;
+            letter-spacing: 15px;
+            font-size: 80px;
+            color: white;
+            margin-top: 110px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+
+        .cm-text-body {
+            background-image: url('Images/dark-triangles.png');
+            background-repeat:repeat;
+            border: 2px grey solid;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            margin-bottom: 100px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+
+        .cm-text2 {
+            color: white;
+        }
+        .cm-text2:hover {
+            color: white;
+        }
+
+
+
+        @media only screen and (max-width: 390px) {
+            .intro-text2 {
+                font-size: 15px;
+                font-family: 'Sansumi-Bold', arial, serif;
+                letter-spacing: 15px;
+                color: white;
+                z-index: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text-body {
+                background-image: url('Images/dark-triangles.png');
+                background-repeat:repeat;
+                border: 2px grey solid;
+                text-align: center;
+                color: white;
+                font-size: 12px;
+                margin-bottom: 100px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+            }
+            .div {
+                height: 160px;
+                width: 107px;
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+            .div1 {
+                height: 160px;
+                width: 107px;
+                margin: 100px auto;
+                margin-top: 550px;
+            }
+
+            .am-text2 {
+                text-align: justify;
+                padding: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+                color: white;
+            }
+            .hor-line1 {
+                border: 1px solid white;
+            }
+
+            .am-text-body {
+                position: relative;
+                left: 0;
+            }
+
+            .am-image {
+                width: 100vw;
+                height: 100vw;
+                border: 2px solid white;
+                position: absolute;
+                left: 0;
+                top: 450px;
+            }
+            .am-text1 {
+                font-size: 25px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-text1 {
+                font-size: 25px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text1 {
+                font-size: 25px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-images {
+                min-width: 125px;
+                min-height: 100px;
+                max-width: 125px;
+                max-height: 100px;
+                margin: 20px;
+            }
+        }
+        @media only screen and (min-width: 390px) and (max-width: 540px) {
+            .intro-text2 {
+                font-size: 15px;
+                font-family: 'Sansumi-Bold', arial, serif;
+                letter-spacing: 15px;
+                color: white;
+                z-index: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div {
+                height: 160px;
+                width: 107px;
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+            .div1 {
+                 height: 160px;
+                 width: 107px;
+                 margin: 100px auto;
+                 margin-top: 750px;
+             }
+
+            .am-text2 {
+                text-align: justify;
+                padding: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+                color: white;
+            }
+            .hor-line1 {
+                border: 1px solid white;
+            }
+
+            .am-text-body {
+                position: relative;
+                left: 0;
+            }
+
+            .am-image {
+                width: 90vw;
+                height: 90vw;
+                border: 2px solid white;
+                position: absolute;
+                left: 5vw;
+                right: 5vw;
+                top: 450px;
+            }
+            .am-text1 {
+                font-size: 25px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-text1 {
+                font-size: 25px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text1 {
+                font-size: 25px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-images {
+                min-width: 125px;
+                min-height: 100px;
+                max-width: 125px;
+                max-height: 100px;
+                margin: 20px;
+            }
+
+
+
+
+        }
+        @media only screen and (min-width: 540px) and (max-width: 720px) {
+            .intro-text2 {
+                font-size: 22px;
+                font-family: 'Sansumi-Bold', arial, serif;
+                letter-spacing: 15px;
+                color: white;
+                z-index: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+            .div1 {
+                margin: 100px auto;
+                margin-top: 800px;
+            }
+
+            .am-text2 {
+                text-align: justify;
+                padding: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 25px;
+                color: white;
+            }
+            .hor-line1 {
+                border: 1px solid white;
+            }
+
+            .am-text-body {
+                position: relative;
+                left: 0;
+            }
+
+            .am-image {
+                width: 75vw;
+                height: 75vw;
+                border: 2px solid white;
+                position: absolute;
+                left: 12.5vw;
+                right: 12.5vw;
+                top: 450px;
+            }
+            .am-text1 {
+                font-size: 35px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-text1 {
+                font-size: 35px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text1 {
+                font-size: 35px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-images {
+                min-width: 225px;
+                min-height: 200px;
+                max-width: 225px;
+                max-height: 200px;
+                margin: 20px;
+            }
+
+
+
+
+        }
+        @media only screen and (min-width: 720px) and (max-width: 990px) {
+            .intro-text2 {
+                font-size: 23px;
+                font-family: 'Sansumi-Bold', arial, serif;
+                letter-spacing: 15px;
+                color: white;
+                z-index: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+            .div1 {
+                margin: 100px auto;
+                margin-top: 650px;
+            }
+
+            .am-text2 {
+                text-align: justify;
+                padding: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 27px;
+                color: white;
+            }
+            .hor-line1 {
+                border: 1px solid white;
+            }
+
+            .am-text-body {
+                position: relative;
+                left: 0;
+            }
+
+            .am-image {
+                width: 50vw;
+                height: 50vw;
+                border: 2px solid white;
+                position: absolute;
+                left: 25vw;
+                right: 25vw;
+                top: 450px;
+            }
+            .am-text1 {
+                font-size: 37px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-text1 {
+                font-size: 37px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text1 {
+                font-size: 37px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-images {
+                min-width: 225px;
+                min-height: 200px;
+                max-width: 225px;
+                max-height: 200px;
+                margin: 20px;
+            }
+
+
+
+
+        }
+        @media only screen and (min-width: 991px) and (max-width: 1140px) {
+            .intro-text2 {
+                font-size: 35px;
+                font-family: 'Sansumi-Bold', arial, serif;
+                letter-spacing: 15px;
+                color: white;
+                z-index: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+            .div1 {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+
+            .am-text2 {
+                text-align: justify;
+                padding: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 27px;
+                color: white;
+            }
+            .hor-line1 {
+                border: 1px solid white;
+            }
+
+            .am-text-body {
+                position: relative;
+                left: 0;
+            }
+
+            .am-image {
+                width: 300px;
+                height: 300px;
+                border: 2px solid white;
+                position: absolute;
+                right: -100px;
+                top: 155px;
+            }
+            .am-text1 {
+                font-size: 37px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-text1 {
+                font-size: 37px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text1 {
+                font-size: 37px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-images {
+                min-width: 225px;
+                min-height: 200px;
+                max-width: 225px;
+                max-height: 200px;
+                margin: 20px;
+            }
+
+
+
+
+        }
+        @media only screen and (min-width: 1140px) and (max-width: 1200px) {
+            .intro-text2 {
+                font-size: 35px;
+                font-family: 'Sansumi-Bold', arial, serif;
+                letter-spacing: 15px;
+                color: white;
+                z-index: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+            .div1 {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+
+            .am-text2 {
+                text-align: justify;
+                padding: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 34px;
+                color: white;
+            }
+            .hor-line1 {
+                border: 1px solid white;
+            }
+
+            .am-text-body {
+                position: relative;
+                left: 0;
+            }
+
+            .am-image {
+                width: 300px;
+                height: 300px;
+                border: 2px solid white;
+                position: absolute;
+                right: -100px;
+                top: 155px;
+            }
+            .am-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-images {
+                min-width: 225px;
+                min-height: 200px;
+                max-width: 225px;
+                max-height: 200px;
+                margin: 20px;
+            }
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1350px) {
+            .intro-text2 {
+                font-size: 35px;
+                font-family: 'Sansumi-Bold', arial, serif;
+                letter-spacing: 15px;
+                color: white;
+                z-index: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+            .div1 {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+
+            .am-text2 {
+                text-align: justify;
+                padding: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 34px;
+                color: white;
+            }
+            .hor-line1 {
+                border: 1px solid white;
+            }
+
+            .am-text-body {
+                position: relative;
+                left: 0;
+            }
+
+            .am-image {
+                width: 300px;
+                height: 300px;
+                border: 2px solid white;
+                position: absolute;
+                right: 0px;
+                top: 155px;
+            }
+            .am-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-images {
+                min-width: 225px;
+                min-height: 200px;
+                max-width: 225px;
+                max-height: 200px;
+                margin: 20px;
+            }
+        }
+        @media only screen and (min-width: 1350px) and (max-width: 1750px) {
+            .intro-text2 {
+                font-size: 40px;
+                font-family: 'Sansumi-Bold', arial, serif;
+                letter-spacing: 15px;
+                color: white;
+                z-index: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+            .div1 {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+
+            .am-text2 {
+                text-align: justify;
+                padding: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 34px;
+                color: white;
+            }
+            .hor-line1 {
+                border: 1px solid white;
+            }
+
+            .am-text-body {
+                position: relative;
+                left: 0;
+            }
+
+            .am-image {
+                width: 350px;
+                height: 350px;
+                border: 2px solid white;
+                position: absolute;
+                right: 0px;
+                top: 155px;
+            }
+            .am-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-images {
+                min-width: 225px;
+                min-height: 200px;
+                max-width: 225px;
+                max-height: 200px;
+                margin: 20px;
+            }
+        }
+        @media only screen and (min-width: 1750px) {
+            .intro-text2 {
+                font-size: 60px;
+                font-family: 'Sansumi-Bold', arial, serif;
+                letter-spacing: 15px;
+                color: white;
+                z-index: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+            .div1 {
+                margin: 100px auto;
+                margin-top: 200px;
+            }
+
+            .am-text2 {
+                text-align: justify;
+                padding: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 34px;
+                color: white;
+            }
+            .hor-line1 {
+                border: 1px solid white;
+            }
+
+            .am-text-body {
+                position: relative;
+                left: 0;
+            }
+
+            .am-image {
+                width: 500px;
+                height: 500px;
+                border: 2px solid white;
+                position: absolute;
+                right: -40px;
+                top: 160px;
+            }
+            .am-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cm-text1 {
+                font-size: 44px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pp-images {
+                min-width: 225px;
+                min-height: 200px;
+                max-width: 225px;
+                max-height: 200px;
+                margin: 20px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container intro-container">
+        <div class="row">
+            <div class="col">
+                <hr class="hor-line1">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col intro-subtitle">
+                <p class="intro-text2">Hey there,<br>I'm Mikail Karimi.<br>Current-day<br> student, athlete<br>and aspiring<br> developer</p>
+            </div>
+            <div class="col-offset-0">
+                <img class="am-image" src="Images/img5.jpg" height="500" width="500" alt="temp"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class="div1" src="Images/divider.png" alt="temp" height="319" width="213"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container about-me-container">
+        <div class="row">
+            <div class="col">
+                <h1 class="am-text1">About Me</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col am-text-body">
+                <p class="am-text2">I’m a 17 year old student living in Toronto, Ontario. I’m currently working as a lifeguard and as a coach. I’m planning on studying computer science in university, even then I still have a love for philosophy, more precisely stoicism and self-discipline. The combination of ingenuity from CS and the mindfulness from philosophy inspire the development of my career. In my free time I enjoy coding, reading, cycling, swimming, and playing video games.</p>
+                <p class="am-text2">I'm the running captain and MVP of my school's water polo team. I've participated as a member of the swim, soccer, and volleyball teams. I'm' also a member of my school's robotics team.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="div" src="Images/divider.png" alt="temp" height="319" width="213"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container projects-container">
+        <div class="row">
+            <div class="col">
+                <h1 class="pp-text1">Projects</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center pp-row1">
+            <img class="col pp-images" src="Images\Windows Multi-Tool.png" alt="temp" height="275" width="275">
+
+            <img class="col pp-images" src="Images\Discord Music Bot.png" alt="temp" height="275" width="275">
+
+            <img class="col pp-images" src="Images\Website.png" alt="temp" height="275" width="275">
+
+            <img class="col pp-images" src="Images\2 and 1.png" alt="temp" height="275" width="275">
+
+            <img class="col pp-images" src="Images\Other Game Mods + Scripts.png" alt="temp" height="275" width="275">
+        </div>
+        <div class="row">
+            <div class="col justify-content-center git-col ">
+                <a class="github" href="https://github.com/TopmanKale">GitHub</a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="div" src="Images/divider.png" alt="temp" height="319" width="213"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contact-me-container">
+        <div class="row">
+            <div class="col">
+                <h1 class="cm-text1">Contact Me</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col cm-text-body">
+                <a>mikailkarimi03@gmail.com 📧</a><br>
+                <a></a><br>
+                <a class="cm-text2" href="https://www.linkedin.com/in/mikail-karimi-1096a519a">Linked In ‍💼</a><br>
+                <a></a><br>
+                <a class="cm-text2" href="https://www.instagram.com/mikailk03/">Instagram 📱</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+<script>
+    new kursor({
+        type: 1,
+        removeDefaultCursor: true,
+        color: '#FFFFFF'
+    });
+</script>
+</html>
